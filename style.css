@@ -1,0 +1,39 @@
+
+h1 {
+    text-align: center;
+}
+
+#blog-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+    margin: 20px;
+}
+
+.blog-post {
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    padding: 18px;
+    background-color: #fafafa;
+}
+
+.blog-post h2 {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.blog-post p {
+    font-size: 17px;
+    margin: 0;
+}
+
+button {
+    margin: 5px;
+    cursor: pointer;
+}
+
+@media (max-width: 600px) {
+    #blog-list {
+        grid-template-columns: 1fr;
+    }
+}
